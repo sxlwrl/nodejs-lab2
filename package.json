@@ -1,7 +1,7 @@
 {
-  "name": "nodejs-lab1",
+  "name": "nodejs-lab2",
   "version": "1.0.0",
-  "description": "first lab",
+  "description": "second lab",
   "main": "index.js",
   "type": "module",
   "scripts": {
