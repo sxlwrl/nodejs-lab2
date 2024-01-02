@@ -1,0 +1,46 @@
+{
+  "name": "nodejs-lab1",
+  "version": "1.0.0",
+  "description": "first lab",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc -b",
+    "start": "node dist/index.js",
+    "dev": "ts-node src/server.ts",
+    "lint": "eslint src/",
+    "lint:fix": "eslint src/ --fix",
+    "format": "npx prettier src/ --check",
+    "format:fix": "npx prettier src/ --write",
+    "prepare": "husky install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sxlwrl/nodejs-lab2.git"
+  },
+  "author": "sxlwrl",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sxlwrl/nodejs-lab2/issues"
+  },
+  "homepage": "https://github.com/sxlwrl/nodejs-lab2#readme",
+  "devDependencies": {
+    "@types/node": "^20.10.6",
+    "@typescript-eslint/eslint-plugin": "^6.16.0",
+    "@typescript-eslint/parser": "^6.16.0",
+    "eslint": "^8.56.0",
+    "eslint-config-semistandard": "^17.0.0",
+    "eslint-config-standard": "^17.1.0",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-n": "^15.7.0",
+    "eslint-plugin-promise": "^6.1.1",
+    "eslint-plugin-sonarjs": "^0.23.0",
+    "husky": "^8.0.3",
+    "nodemon": "^3.0.2",
+    "prettier": "3.1.1",
+    "ts-node": "^10.9.2"
+  },
+  "dependencies": {
+    "typescript": "^5.3.3"
+  }
+}
