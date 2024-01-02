@@ -1,19 +1,18 @@
 {
-  "devCommand": "npm run dev",
+  "version": 2,
   "builds": [
     {
-      "src": "src/server.ts",
+      "src": "package.json",
       "use": "@vercel/node",
       "config": {
-        "includeFiles": ["./dist/**"]
+        "distDir": "dist"
       }
     }
   ],
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "src/server.ts",
-      "methods": ["GET", "POST", "OPTIONS"]
+      "dest": "/dist/server.js"
     }
   ]
 }
