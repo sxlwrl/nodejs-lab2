@@ -23,6 +23,7 @@ const defaultHandler: RouterHandler = (req, res) => {
 function useJson(res: http.ServerResponse): Response {
     return Object.assign(res, {
         json: (data: DataRecord) => {
+            res.setHeader('Content-Type', 'application/json');
             res.end(JSON.stringify(data));
         },
     });
